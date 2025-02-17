@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio src="assets/audio/correct-answer.mp3" id="correct-answer-audio"></audio>
+    <audio src="assets/audio/wrong-answer.mp3", id="wrong-answer-audio"></audio>
+    <audio src="assets/audio/intro-song.mp3" id="intro-song"></audio>
+    <audio src="assets/audio/entrance-song.mp3" id="entrance-song"></audio>
+    <audio src="assets/audio/game-song.mp3" id="game-song" loop></audio>
+    <audio src="assets/audio/end-song.mp3" id="end-song"></audio>
+    <audio src="assets/audio/curtains.mp3" id="curtain-sfx"></audio>
+    <div id="content">
+        <div id="pre-game">
+            <video muted nocontrols id="pre-game-video" autoplay loop>
+                <source src="assets/background/pre-game.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div id="in-game">
+            <video muted nocontrols id="game-background-video" autoplay loop>
+                <source src="assets/background/game-background.mp4" type="video/mp4">
+            </video>
+
+            <div class="crossword-board-container">
+                    <div class="crossword-board" id="crossword-board"></div>
+            </div> 
+
+            <div id="question-background" class="set-hidden">
+                <div id="question-container">
+                    <span id="question">
+                    </span>
+                </div>
+
+                <video muted nocontrols id="question-background-video" autoplay loop>
+                    <source src="assets/background/question-background.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div id="red-overlay" class="set-hidden"></div>
+
+            <div id="curtain">
+                <video muted nocontrols id="curtain-video">
+                    <source src="assets/foreground/curtain-transition.webm" type="video/webm">
+                </video>
+            </div>
+
+            <video id="cat-gif" class="set-hidden" nocontrols>
+                <source src="assets/gif/catt.mp4" type="video/mp4">
+            </video>
+
+            <video muted nocontrols id="post-game-video" class="set-hidden">
+                <source src="assets/background/post-game.mp4" type="video/mp4">
+            </video>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
